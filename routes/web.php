@@ -11,9 +11,26 @@
 |
 */
 
+
 Route::get('/','PageController@home')->name('home');
 
 Route::get('/about', [
     'as'=>'about',
     'uses'=>'PageController@about'
 ]);
+
+Route::get('/contact', [
+    'as'=>'message.create',
+    'uses'=>'MessageController@create'
+]);
+
+
+Route::post('/contact', [
+    'as'=>'message.store',
+    'uses'=>'MessageController@store'
+]);
+
+/*Route::get('/test_mail', function(){
+
+    return new ContactFormMail;
+});*/

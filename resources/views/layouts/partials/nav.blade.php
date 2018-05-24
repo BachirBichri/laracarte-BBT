@@ -16,7 +16,7 @@
                 <a class="nav-link" href="#">Artisans</a>
             </li>
             <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="{{ route('message.create') }}">Contact</a>
             </li>
         </ul>
         <ul class="navbar-nav mr-auto navbar-nav-right" >
