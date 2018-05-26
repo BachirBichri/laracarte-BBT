@@ -1,6 +1,6 @@
 @component('mail::message')
 # Hey admin
--{{ $msg->message }}
+-{{ $msg->name }}
 -{{ $msg->email }}
 
 @component('mail::panel')
